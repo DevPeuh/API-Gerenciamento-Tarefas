@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Listar Tags{% endblock %}
+
+{% block content %}
+  <div class="h-100 p-5 bg-light border rounded-3">
+    <h1>Tags</h1>
+    <ul>
+      {% for tag in tags %}
+        <li>
+          {{ tag.nome }} 
+          <a href="{% url 'excluir_tag' tag.id %}" class="btn btn-danger btn-sm">Excluir</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

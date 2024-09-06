@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Excluir Tag{% endblock %}
+
+{% block content %}
+  <div class="h-100 p-5 bg-light border rounded-3">
+    <h1>Excluir Tag</h1>
+    <p>Tem certeza de que deseja excluir a tag "{{ tag.nome }}"?</p>
+    <form method="post">
+      {% csrf_token %}
+      <input class="btn btn-danger" type="submit" value="Excluir">
+      <a class="btn btn-secondary" href="{% url 'tarefas_pendentes_list' %}">Cancelar</a>
+    </form>
+  </div>
+{% endblock %}

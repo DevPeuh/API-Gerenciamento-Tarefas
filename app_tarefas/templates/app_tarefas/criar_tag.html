@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Criar Tag{% endblock %}
+
+{% block content %}
+  <div class="h-100 p-5 bg-light border rounded-3">
+    <h1>Criar Nova Tag</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <br>
+      <input class="btn btn-success" type="submit" value="Salvar">
+    </form>
+  </div>
+{% endblock %}
