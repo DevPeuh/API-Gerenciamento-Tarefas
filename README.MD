@@ -46,8 +46,8 @@ Aqui estão os principais endpoints da API:
 - `GET /listar_tags/` - Lista todas as tags
 
 ## Capturas de Tela
-![Tela inicial da API](https://github.com/DevPeuh/DevPeuh/blob/main/img-API.png?raw=true)
+![Tela inicial da API](https://github.com/DevPeuh/API-Gerenciamento-Tarefas/blob/master/img/img-API-1.png?raw=true)
 
-![Parte de editar, concluir, adiar ou excluir, também visualização descritiva da tarefa](https://github.com/DevPeuh/DevPeuh/blob/main/img-API-2.png?raw=true)
+![Parte de editar, concluir, adiar ou excluir, também visualização descritiva da tarefa](https://github.com/DevPeuh/API-Gerenciamento-Tarefas/blob/master/img/img-API-2.png?raw=true)
 
-![Por dentro da edição de tarefa](https://github.com/DevPeuh/DevPeuh/blob/main/img-API-3.png?raw=true)
+![Por dentro da edição de tarefa](https://github.com/DevPeuh/API-Gerenciamento-Tarefas/blob/master/img/img-API-3.png?raw=true)
