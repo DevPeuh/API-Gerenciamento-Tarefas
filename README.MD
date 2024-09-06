@@ -45,9 +45,9 @@ Aqui estão os principais endpoints da API:
 - `POST /excluir_tag/<int:tag_id>/` - Exclui uma tag
 - `GET /listar_tags/` - Lista todas as tags
 
-## Capturas de Tela
+## tela inicial da API
 ![Tela inicial da API](https://github.com/DevPeuh/API-Gerenciamento-Tarefas/blob/master/img/img-API-1.png?raw=true)
-
+## Concluir, excluir, adiar ou editar/vizualização descritiva da tarefa
 ![Parte de editar, concluir, adiar ou excluir, também visualização descritiva da tarefa](https://github.com/DevPeuh/API-Gerenciamento-Tarefas/blob/master/img/img-API-2.png?raw=true)
-
+## Por dentro da edição da tarefa
 ![Por dentro da edição de tarefa](https://github.com/DevPeuh/API-Gerenciamento-Tarefas/blob/master/img/img-API-3.png?raw=true)
