@@ -2,8 +2,6 @@ from django import forms
 from .models import Tarefa, Tag
 
 class AdicionarTarefa(forms.ModelForm):
-    """Formulário para adicionar uma nova tarefa."""
-
     class Meta:
         model = Tarefa
         fields = ('descricao', 'prioridade')
@@ -21,8 +19,6 @@ class AdicionarTarefa(forms.ModelForm):
         }
 
 class EditarTarefaForm(forms.ModelForm):
-    """Formulário para editar uma tarefa existente."""
-
     class Meta:
         model = Tarefa
         fields = ('descricao', 'prioridade', 'status', 'data_vencimento', 'comentarios', 'anexos', 'tags')
