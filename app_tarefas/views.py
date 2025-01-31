@@ -39,7 +39,6 @@ def adiar_tarefa(request, tarefa_id):
     return redirect('tarefas_pendentes_list')
 
 def editar_tarefa(request, tarefa_id):
-    """Edita uma tarefa existente."""
     tarefa = get_object_or_404(Tarefa, id=tarefa_id)
     if request.method == 'POST':
         form = EditarTarefaForm(request.POST, instance=tarefa)
