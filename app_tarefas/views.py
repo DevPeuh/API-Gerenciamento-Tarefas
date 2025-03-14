@@ -41,7 +41,7 @@ def adiar_tarefa(request, tarefa_id):
 def editar_tarefa(request, tarefa_id):
     tarefa = get_object_or_404(Tarefa, id=tarefa_id)
     if request.method == 'POST':
-        form = EditarTarefaForm(request.POST, instance=tarefa)
+        form = EditarTarefaForm(request.POST, instance=tarefa) 
         if form.is_valid():
             form.save()
             return redirect('tarefas_pendentes_list')
@@ -73,7 +73,7 @@ def criar_tag(request):
             return redirect('tarefas_pendentes_list')
     else:
         form = TagForm()
-    return render(request, 'app_tarefas/criar_tag.html', {'form': form})
+    return render(request, 'app_tarefas/criar_tag.html', {'form': form}) # Devolve ao inicio
 
 def excluir_tag(request, tag_id):
     tag = get_object_or_404(Tag, id=tag_id)
